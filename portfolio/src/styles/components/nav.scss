@@ -1,0 +1,80 @@
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    // border: 1px solid green;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        height: 60%;
+        width: 100%;
+        a {
+            text-decoration: none;
+            width: 33%;
+
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            height: 20px;
+            padding: 9px 15px 9px 15px;
+            color: black;
+            background-color: #FCF6F5FF;
+            border: 1px solid black;
+            
+            &:hover {
+                background-color: black;
+                color: #FCF6F5FF;
+                p {
+                    background-color: black;
+                    color: #FCF6F5FF;
+                }
+                img {
+                    background-color: black;
+                    color: #FCF6F5FF;
+                }
+            }
+            // Look into flavicons instead of pngs
+
+            p {
+                margin: 0 0 0 5px;
+
+            }
+
+        }
+
+        .vl {
+            border-left: 1px solid black;
+            height: 100%;
+            margin: 0 15px 0 15px;
+        }
+    }
+}
+
+#nav-home {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-style: solid none solid solid ;
+
+}
+#nav-contact {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: solid solid solid none ;
+}
+
+// Research sticky CSS for scrolling to positions
+// Display projects on carousel?
+// Keep nav bar at top and have it scroll to parts on page?
+

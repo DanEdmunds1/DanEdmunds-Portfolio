@@ -1,0 +1,63 @@
+$sailor-blue: #00203FFF;
+$mint: #ADEFD1FF;
+$forest-green: #2C5F2D;
+$moss-green: #97BC62FF;
+$sky-blue: #79ABE3FF;
+$white: #FCF6F5FF;
+$island-green: #2BAE66FF;
+$royal-purple: #603F83FF;
+$ice-flow: #C7D3D4FF;
+
+.color-options {
+    font-weight: bold;
+}
+
+.sailor-blue {
+    color: $sailor-blue;
+    background-color: $mint;
+}
+
+.mint {
+    color: $mint;
+    background-color: $sailor-blue;
+}
+
+.forest-green {
+    color: $forest-green;
+    background-color: $moss-green;
+}
+
+.moss-green {
+    color: $moss-green;
+    background-color: $forest-green;
+}
+
+.sky-blue {
+    color: $sky-blue;
+    background-color: $white;
+}
+
+.white1 {
+    color: $white;
+    background-color: $sky-blue;
+}
+
+.island-green {
+    color: $island-green;
+    background-color: $white;
+}
+
+.white2 {
+    color: $white;
+    background-color: $island-green;
+}
+
+.royal-purple {
+    color: $royal-purple;
+    background-color: $ice-flow;
+}
+
+.ice-flow {
+    color: $ice-flow;
+    background-color: $royal-purple;
+}
