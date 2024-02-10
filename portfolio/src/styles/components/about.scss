@@ -1,0 +1,77 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dan-container {
+        border: 2px solid black;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #dan-img {
+            height: 400px;
+            width: 90%;
+            border: 2px solid black;
+            margin-top: 22px;
+        }
+
+        .dan-titles {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 90%;
+            margin: 10px 0 10px 0;
+            font-size: larger;
+
+            h4 {
+                margin: 0;
+            }
+
+            h5 {
+                margin: 0;
+            }
+        }
+
+    }
+
+    #creatures {
+        text-align: center;
+    }
+
+    .dog-section {
+        display: flex;
+        justify-content: space-around;
+        
+
+        .dog {
+            // border: 1px solid black;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            margin: 0 20px 0 20px;
+
+            img {
+                height: 300px;
+                border: 2px solid black;
+                width: 90%;
+                margin-top: 14px;
+            }
+
+            h4 {
+                margin: 10px 0 0 0;
+            }
+
+            p {
+                text-align: center;
+                margin: 5px 0 10px 0;
+            }
+
+        }
+
+
+    }
+}

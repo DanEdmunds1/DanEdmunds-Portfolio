@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+
 import { useState } from 'react'
 
 
@@ -10,13 +10,15 @@ export default function Nav() {
     const [hoverProjects, setHoverProjects] = useState(false)
 
     return (
+
         <div className="nav-container">
             <div className="nav">
                 <div className="nav-items">
 
-                    <a href='#home' id="nav-home" className="nav-item"
+                    <a href='#' id="nav-home" className="nav-item"
                         onMouseEnter={() => setHoverHome(true)}
-                        onMouseLeave={() => setHoverHome(false)}>
+                        onMouseLeave={() => setHoverHome(false)} 
+                        onClick={() => window.scrollTo(0, 0)}>
                         {hoverHome ? (
                             <img className="nav-icon" src="../src/assets/home1.png" alt="" />
                         ) : (
@@ -63,6 +65,5 @@ export default function Nav() {
                 </div>
             </div>
         </div>
-
     )
 }

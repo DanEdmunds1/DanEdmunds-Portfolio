@@ -1,86 +1,102 @@
 .nav-container {
     display: flex;
     justify-content: center;
-}
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
 
-.nav {
-    // border: 1px solid green;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-
-    .nav-items {
+    .nav {
+        // border: 1px solid green;
+        height: 7vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px;
-        height: 60%;
-        width: 100%;
+        width: 80%;
+        background-color: transparent;
 
-        .nav-item {
+        .nav-items {
             display: flex;
+            align-items: center;
             justify-content: center;
-            height: 20px;
-            padding: 9px 15px 9px 15px;
-            color: black;
-            background-color: #FCF6F5FF;
-            border: 1px solid black;
-            width: 33%;
-            text-decoration: none;
-            
-            &:hover {
-                animation-name: color-change;
-                animation-duration: 0.5s;
-                animation: color-change 0.5s forwards;
-                p {
-                    animation-name: color-change;
-                    animation-duration: 0.5s;
-                    animation: color-change 0.5s forwards;
-                }
-                img {
-                    animation-name: color-change;
-                    animation-duration: 0.5s;
-                    animation: color-change 0.5s forwards;
-                }
-            }
+            border-radius: 20px;
+            height: 60%;
+            width: 100%;
 
-
-            p {
-                margin: 0 0 0 5px;
-
+            .nav-item {
+                display: flex;
+                justify-content: center;
+                height: 20px;
+                padding: 9px 15px 9px 15px;
                 color: black;
+                background-color: #FCF6F5FF;
+                border: 1px solid black;
+                width: 33%;
+                text-decoration: none;
+
+                &:hover {
+                    animation-name: color-change;
+                    animation-duration: 0.5s;
+                    animation: color-change 0.5s forwards;
+
+                    p {
+                        animation-name: color-change;
+                        animation-duration: 0.5s;
+                        animation: color-change 0.5s forwards;
+                    }
+
+                    img {
+                        animation-name: color-change;
+                        animation-duration: 0.5s;
+                        animation: color-change 0.5s forwards;
+                    }
+                }
+
+
+                p {
+                    margin: 0 0 0 5px;
+
+                    color: black;
+                }
+
             }
 
-        }
-
-        .vl {
-            border-left: 1px solid black;
-            height: 100%;
-            margin: 0 15px 0 15px;
+            .vl {
+                border-left: 1px solid black;
+                height: 100%;
+                margin: 0 15px 0 15px;
+            }
         }
     }
 }
 
+
+
 @keyframes color-change {
-    from {background-color: #FCF6F5FF; color: black}
-    to {background-color: black; color: #FCF6F5FF}
+    from {
+        background-color: #FCF6F5FF;
+        color: black
+    }
+
+    to {
+        background-color: black;
+        color: #FCF6F5FF
+    }
 }
 
 #nav-home {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-style: solid none solid solid ;
+    border-style: solid none solid solid;
 
 }
+
 #nav-contact {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-style: solid solid solid none ;
+    border-style: solid solid solid none;
 }
 
 // Research sticky CSS for scrolling to positions
 // Display projects on carousel?
 // Keep nav bar at top and have it scroll to parts on page?
-
