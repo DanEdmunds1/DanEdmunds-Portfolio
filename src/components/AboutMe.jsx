@@ -19,7 +19,7 @@ export default function AboutMe() {
                 </div>
 
                 <p className="bio">For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
-                After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
+                    After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
                 </p>
                 <h3 id="creatures">My Creatures</h3>
                 <div className="dog-section">
@@ -39,10 +39,20 @@ export default function AboutMe() {
 
                 <article className="about-section">
                     <h3>Education</h3>
-                    <h4>General Assembly</h4>
-                    <h5>Software Engineering Immersive Student, General Assembly, Remote, 16/10/23 - 19/01/24
-                    </h5>
-                    <p>A 12 week bootcamp consisting of live coding instruction, pre-recorded lessons, and individual, paired, and group projects</p>
+                    <div className="school">
+                        <h4>General Assembly</h4>
+                        <h5>Software Engineering Immersive Student, General Assembly, Remote, 16/10/23 - 19/01/24
+                        </h5>
+                        <p>A 12 week bootcamp consisting of live coding instruction, pre-recorded lessons, and individual, paired, and group projects</p>
+                    </div>
+
+                    <div className="school">
+                        <h4>Loughborough University</h4>
+                        <h5>BSc Business Psychology, Loughborough University, Loughborough, October 2019 - June 2023
+                        </h5>
+                        <p>Achieved an Upper Second Class Degree with an additonal Diploma in Professional Studies from a Professional Training Placement </p>
+                    </div>
+
                 </article>
             </div>
         </>

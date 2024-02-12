@@ -48,7 +48,7 @@
     .dog-section {
         display: flex;
         justify-content: space-around;
-        
+
 
         .dog {
             // border: 1px solid black;
@@ -79,16 +79,42 @@
 
 
     }
+
+    .about-section {
+        h3 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        .school {
+            h4 {
+                font-size: 30px;
+                margin: 20px 0 0 0;
+            }
+
+            h5 {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            p {
+                margin: 10px 0 0 0;
+            }
+        }
+
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     .bio {
-      width: 40%;
+        width: 40%;
     }
-  }
+}
 
-  @media only screen and (min-width: 481px) and (max-width: 999px) {
+@media only screen and (min-width: 481px) and (max-width: 999px) {
     .bio {
         width: 60%;
     }
-  }
+}
