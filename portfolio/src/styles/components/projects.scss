@@ -1,30 +1,115 @@
 .projects {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+
     .projects-container {
-        width: 75%;
+        // width: 80%;
+
         .single-project {
             display: flex;
-            padding: 20px;
+            padding: 30px;
+
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
 
 
             img {
                 height: 30vh;
-                width: 45%;
-                background: linear-gradient(black, black) padding-box,
-                    linear-gradient(to right, #603F83FF, #C7D3D4FF) border-box;
-                border: 4px solid transparent;
+                width: 35vh;
                 border-radius: 10px;
             }
 
             .project-text {
                 display: flex;
                 flex-direction: column;
+                margin: 0 20px 0 20px;
+                height: 30vh;
+
+                // Media query for width based on screen size
+
+                p {
+                    margin: 10px 0 10px 0;
+                    font-size: 20px;
+                    overflow-y: auto;
+                    transition: transform .5s;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+
+                h3 {
+                    margin: 0;
+                    font-size: 40px;
+                }
+
+                h4 {
+                    margin: 5px 0 0 0;
+                    font-size: 30px;
+                }
 
                 .project-links {
                     display: flex;
+
+                    a {
+                        margin: 0 10px 0 10px;
+                        border: 1px solid black;
+                        border-radius: 5px;
+
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-weight: bold;
+                        padding: 5px;
+
+                        // color: #603F83FF;
+                        // background-color: #C7D3D4FF;
+                        color: black;
+                        transition: transform .5s, background-color 0.5s ease, color 0.5s ease;
+
+                        .overlay {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 0;
+                            background-color: black;
+                            transition: height 0.5s ease;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            #button-img {
+                                height: 35px;
+                                width: 35px;
+                                visibility: hidden;
+                                border: none;
+                                border-radius: 0;
+                                opacity: 0;
+                                transition: opacity 1.1s ease;
+                                background-color: black;
+                            }
+                        }
+
+                        &:hover {
+                            color: #FCF6F5FF;
+                            background-color: black;
+                            transform: scale(1.2);
+
+                            .overlay {
+                                height: 100%;
+
+                                #button-img {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+
+                            }
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
                 }
             }
 
@@ -32,3 +117,40 @@ justify-content: center;
     }
 
 }
+
+// @media only screen and (min-width: 1000px) {
+//     .projects-container {
+//         width: 80%;
+//         .project-text {
+//             width: 30%;
+//           }
+//     }
+//   }
+
+#projects-title {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1146px) {
+    .projects-container {
+        width: 100%;
+
+        .single-project {
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (min-width: 1147px) {
+    .projects-container {
+        width: 80%;
+
+        .project-text {
+            width: 30%;
+        }
+    }
+}
+
+// 1341 it starts fukcing up
+// 1447 fukcey also

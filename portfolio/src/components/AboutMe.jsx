@@ -7,8 +7,9 @@ export default function AboutMe() {
 
     return (
         <>
-            <div id="about">
-                <h1>ABOUT ME</h1>
+            <div id="about" className="divider"></div>
+            <div className="about">
+                <h2>ABOUT ME</h2>
                 <div className="dan-container">
                     <img id="dan-img" src="../src/assets/dan.jpg" alt="image-of-me" />
                     <div className="dan-titles">
@@ -17,7 +18,9 @@ export default function AboutMe() {
                     </div>
                 </div>
 
-                <p>I am a resilient and adaptable Software Engineer with a BSc in Business Psychology, possessing excellent communication, problem-solving, and leadership skills. I transitioned into software engineering because I am drawn to its demand for critical thinking and problem-solving, offering an outlet for creativity. Proficient in languages such as JavaScript, Python, and HTML/SASS, I strive to deliver value through user-centric web applications and software solutions. </p>
+                <p className="bio">For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
+                After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
+                </p>
                 <h3 id="creatures">My Creatures</h3>
                 <div className="dog-section">
                     <div className="dog">
