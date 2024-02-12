@@ -1,18 +1,30 @@
-import { Outlet } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-function App() {
 
+import Contact from './components/Contact'
+import AllProjects from './components//AllProjects'
+import AboutMe from './components//AboutMe'
+
+
+export default function App() {
 
   return (
     <>
       <Nav />
+      <div className="hero">
+        <div className="name-box">
+          <h1>DAN EDMUNDS</h1>
+          <h3>Junior Developer</h3>
+        </div>
+      </div>
+      {/* <Link to='/colors'><button>Color Schemes</button></Link> */}
+
       <main>
-        <Outlet />
+        <AllProjects />
+        <AboutMe />
+        <Contact />
       </main>
-    <Footer />
+      <Footer />
     </>
   )
 }
-
-export default App
