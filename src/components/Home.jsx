@@ -15,7 +15,7 @@ export default function Home() {
                     <h3>Junior Developer</h3>
                 </div>
             </div>
-            <Link to='/colors'><button>Color Schemes</button></Link>
+            {/* <Link to='/colors'><button>Color Schemes</button></Link> */}
 
             <AllProjects />
             <AboutMe />
