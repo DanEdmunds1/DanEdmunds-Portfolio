@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://danedmunds1.github.io/DanEdmunds-Portfolio/",
   "type": "module",
