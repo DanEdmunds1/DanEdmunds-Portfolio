@@ -13,8 +13,8 @@ export default function AllProjects() {
                     <article className="single-project">
                         <img src='../src/assets/project4.jpg' alt='project image' />
                         <div className="project-text">
-                            <h3>Solo</h3>
-                            <h4>Individual Project - 1.5 Weeks</h4>
+                            <h3>TrailStrider</h3>
+                            <h4>Solo Project - 1.5 Weeks</h4>
                             <p>A hiking application with full CRUD capabilities for hiking trails, consisting of a Django REST Framework back-end, a PostgreSQL database, and a front-end React application that consumes the back-end.
                             </p>
                             <div className="project-links">

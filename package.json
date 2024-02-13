@@ -5,8 +5,11 @@
   "homepage": "https://danedmunds1.github.io/DanEdmunds-Portfolio/",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start" : "react-script start",
     "dev": "vite",
-    "build": "vite build--base=./",
+    "build": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
