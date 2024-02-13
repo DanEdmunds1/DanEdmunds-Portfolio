@@ -12,14 +12,56 @@
         justify-content: center;
 
         .skill {
-            width: 120px; // Controls size of icon
-            margin: 10px;
-            text-align: center;
+            width: 90px; // Controls size of icon
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .image-container {
+                position: relative;
+                // overflow: hidden;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            &:hover {
+                p {
+                  
+                    animation: fadeIn 0.3s ease 0.1s forwards;
+                }
+
+                img {
+                    transform: translateY(-25px);
+                }
+            }
             img {
                 max-width: 100%;
                 height: auto;
+                transition: transform 0.3s ease, translate 0.3s ease;
+
+            }
+            p {
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                margin: 5px 0 0 0;
+                background-color: transparent;
+                font-weight: bold;
             }
         }
     }
 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
