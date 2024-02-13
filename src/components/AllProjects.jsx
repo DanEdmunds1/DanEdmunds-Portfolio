@@ -45,7 +45,7 @@ export default function AllProjects() {
                                 Deployment</a>
                             </div>
                         </div>
-                        <img src='../assets/project3.jpg' alt='project image' />
+                        <img src='/src/assets/project3.jpg' alt='project image' />
                     </article>
 
                     {/* POKEMON API */}
