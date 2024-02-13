@@ -1,4 +1,6 @@
-
+import dan from '../assets/dan.jpg'
+import cooper from '../assets/cooper.jpg'
+import freddie from '../assets/freddie.jpg'
 
 
 export default function AboutMe() {
@@ -11,7 +13,7 @@ export default function AboutMe() {
             <div className="about">
                 <h2>ABOUT ME</h2>
                 <div className="dan-container">
-                    <img id="dan-img" src="../src/assets/dan.jpg" alt="image-of-me" />
+                    <img id="dan-img" src={dan} alt="image-of-me" />
                     <div className="dan-titles">
                         <h5>Junior Developer</h5>
                         <h4>Dan Edmunds</h4>
@@ -24,12 +26,12 @@ export default function AboutMe() {
                 <h3 id="creatures">My Creatures</h3>
                 <div className="dog-section">
                     <div className="dog">
-                        <img src="../src/assets/cooper.jpg" alt="image-of-dog" />
+                        <img src={cooper} alt="image-of-dog" />
                         <h4>Cooper</h4>
                         <p>A good boy who enjoys walks and swimming</p>
                     </div>
                     <div className="dog">
-                        <img src="../src/assets/freddie.jpg" alt="image-of-dog" />
+                        <img src={freddie} alt="image-of-dog" />
                         <h4>Freddie</h4>
                         <p>Falls asleep at the desk instead of coding</p>
                     </div>

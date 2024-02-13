@@ -1,6 +1,14 @@
+import home from '../assets/home.png'
+import home1 from '../assets/home1.png'
+import projects from '../assets/projects.png'
+import projects1 from '../assets/projects1.png'
+import me from '../assets/me.png'
+import me1 from '../assets/me1.png'
+import mail from '../assets/mail.png'
+import mail1 from '../assets/mail1.png'
+
 
 import { useState } from 'react'
-
 
 export default function Nav() {
 
@@ -20,9 +28,9 @@ export default function Nav() {
                         onMouseLeave={() => setHoverHome(false)} 
                         onClick={() => window.scrollTo(0, 0)}>
                         {hoverHome ? (
-                            <img className="nav-icon" src="../src/assets/home1.png" alt="" />
+                            <img className="nav-icon" src={home1} alt="" />
                         ) : (
-                            <img className="nav-icon" src="../src/assets/home.png" alt="" />
+                            <img className="nav-icon" src={home} alt="" />
                         )}
                         <p>HOME</p>
                     </a>
@@ -31,9 +39,9 @@ export default function Nav() {
                         onMouseEnter={() => setHoverProjects(true)}
                         onMouseLeave={() => setHoverProjects(false)}>
                         {hoverProjects ? (
-                            <img className="nav-icon" src="../src/assets/projects1.png" alt="" />
+                            <img className="nav-icon" src={projects1} alt="" />
                         ) : (
-                            <img className="nav-icon" src="../src/assets/projects.png" alt="" />
+                            <img className="nav-icon" src={projects} alt="" />
                         )}
                         <p>PROJECTS</p>
                     </a>
@@ -43,9 +51,9 @@ export default function Nav() {
                         onMouseEnter={() => setHoverMe(true)}
                         onMouseLeave={() => setHoverMe(false)}>
                         {hoverMe ? (
-                            <img className="nav-icon" src="../src/assets/me1.png" alt="" />
+                            <img className="nav-icon" src={me1} alt="" />
                         ) : (
-                            <img className="nav-icon" src="../src/assets/me.png" alt="" />
+                            <img className="nav-icon" src={me} alt="" />
                         )}
                         <p>ABOUT ME</p>
                     </a>
@@ -55,9 +63,9 @@ export default function Nav() {
                         onMouseEnter={() => setHoverContact(true)}
                         onMouseLeave={() => setHoverContact(false)}>
                         {hoverContact ? (
-                            <img className="nav-icon" src="../src/assets/mail1.png" alt="" />
+                            <img className="nav-icon" src={mail1} alt="" />
                         ) : (
-                            <img className="nav-icon" src="../src/assets/mail.png" alt="" />
+                            <img className="nav-icon" src={mail} alt="" />
                         )}
                         <p>CONTACT</p>
                     </a>

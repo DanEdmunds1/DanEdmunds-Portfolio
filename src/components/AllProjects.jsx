@@ -1,3 +1,9 @@
+import project1 from '../assets/project1.jpg'
+import project2 from '../assets/project2.jpg'
+import project3 from '../assets/project3.jpg'
+import project4 from '../assets/project4.jpg'
+import githubIcon from '../assets/github-icon-port.png'
+import deploy from '../assets/deploy.png'
 
 
 export default function AllProjects() {
@@ -11,7 +17,7 @@ export default function AllProjects() {
                 <div className="projects-container">
                     {/* TRAILSTRIDER */}
                     <article className="single-project">
-                        <img src='../assets/project4.jpg' alt='project image' />
+                        <img src={project4} alt='project image' />
                         <div className="project-text">
                             <h3>TrailStrider</h3>
                             <h4>Solo Project - 1.5 Weeks</h4>
@@ -19,10 +25,10 @@ export default function AllProjects() {
                             </p>
                             <div className="project-links">
                                 <a href='https://github.com/DanEdmunds1/TrailStrider1' target="_blank" rel="noopener noreferrer">
-                                    <div className="overlay"><img id="button-img" src="../src/assets/github-icon-port.png" /></div>
+                                    <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                     ReadMe</a>
                                 <a href='https://trailstrider1-99ed82a02533.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/deploy.png" /></div>
+                                <div className="overlay"><img id="button-img" src={deploy} /></div>
                                 Deployment</a>
                             </div>
                         </div>
@@ -38,19 +44,19 @@ export default function AllProjects() {
                             </p>
                             <div className="project-links" style={{justifyContent: 'flex-end'}}>
                                 <a href='https://github.com/DanEdmunds1/GameOfThrones_fullstack' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/github-icon-port.png" /></div>
+                                <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                 ReadMe</a>
                                 <a href='https://gameofthronesfullstack-b965d7354f59.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/deploy.png" /></div>
+                                <div className="overlay"><img id="button-img" src={deploy} /></div>
                                 Deployment</a>
                             </div>
                         </div>
-                        <img src='/src/assets/project3.jpg' alt='project image' />
+                        <img src={project3} alt='project image' />
                     </article>
 
                     {/* POKEMON API */}
                     <article className="single-project">
-                        <img src='../src/assets/project2.jpg' alt='project image' />
+                        <img src={project2} alt='project image' />
                         <div className="project-text">
                             <h3>Pokemon API</h3>
                             <h4>Paired Project - 2 Days</h4>
@@ -59,10 +65,10 @@ export default function AllProjects() {
                             </p>
                             <div className="project-links">
                                 <a href='https://github.com/DanEdmunds1/PokemonAPI' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/github-icon-port.png" /></div>
+                                <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                 ReadMe</a>
                                 <a href='https://pokemonapi-ga.netlify.app/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/deploy.png" /></div>
+                                <div className="overlay"><img id="button-img" src={deploy} /></div>
                                 Deployment</a>
                             </div>
                         </div>
@@ -77,14 +83,14 @@ export default function AllProjects() {
                             </p>
                             <div className="project-links" style={{justifyContent: 'flex-end'}}>
                                 <a href='https://github.com/DanEdmunds1/Battleships' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/github-icon-port.png" /></div>
+                                <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                 ReadMe</a>
                                 <a href='https://danedmunds1.github.io/Battleships/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src="../src/assets/deploy.png" /></div>
+                                <div className="overlay"><img id="button-img" src={deploy} /></div>
                                 Deployment</a>
                             </div>
                         </div>
-                        <img src='../src/assets/project1.jpg' alt='project image' />
+                        <img src={project1} alt='project image' />
                     </article>
                 </div>
             </section>
