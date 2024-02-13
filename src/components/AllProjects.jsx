@@ -11,7 +11,7 @@ export default function AllProjects() {
                 <div className="projects-container">
                     {/* TRAILSTRIDER */}
                     <article className="single-project">
-                        <img src='../src/assets/project4.jpg' alt='project image' />
+                        <img src='../assets/project4.jpg' alt='project image' />
                         <div className="project-text">
                             <h3>TrailStrider</h3>
                             <h4>Solo Project - 1.5 Weeks</h4>
@@ -45,7 +45,7 @@ export default function AllProjects() {
                                 Deployment</a>
                             </div>
                         </div>
-                        <img src='../src/assets/project3.jpg' alt='project image' />
+                        <img src='../assets/project3.jpg' alt='project image' />
                     </article>
 
                     {/* POKEMON API */}
