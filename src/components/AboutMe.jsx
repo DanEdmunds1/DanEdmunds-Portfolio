@@ -40,7 +40,7 @@ export default function AboutMe() {
 
 
                 <article className="about-section">
-                    <h3>Education</h3>
+                    <h3>EDUCATION</h3>
                     <div className="school">
                         <h4>General Assembly</h4>
                         <h5>Software Engineering Immersive Student, General Assembly, Remote, 16/10/23 - 19/01/24

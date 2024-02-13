@@ -5,6 +5,7 @@
 @import './components/projects.scss';
 @import './components/about.scss';
 @import './components/footer.scss';
+@import './components/skills.scss';
 
 * {
     font-family: 'Dosis', sans-serif;
@@ -23,6 +24,7 @@ body {
 h2 {
    font-size: 50px;
    padding: 10px 0 10px 0;
-   border-bottom: 5px solid black;
+   text-align: center;
+//    border-bottom: 5px solid black;
 
 }

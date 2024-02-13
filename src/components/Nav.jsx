@@ -6,6 +6,8 @@ import me from '../assets/me.png'
 import me1 from '../assets/me1.png'
 import mail from '../assets/mail.png'
 import mail1 from '../assets/mail1.png'
+import skills from '../assets/skills.png'
+import skills1 from '../assets/skills1.png'
 
 
 import { useState } from 'react'
@@ -16,6 +18,7 @@ export default function Nav() {
     const [hoverMe, setHoverMe] = useState(false)
     const [hoverContact, setHoverContact] = useState(false)
     const [hoverProjects, setHoverProjects] = useState(false)
+    const [hoverSkills, setHoverSkills] = useState(false)
 
     return (
 
@@ -44,6 +47,17 @@ export default function Nav() {
                             <img className="nav-icon" src={projects} alt="" />
                         )}
                         <p>PROJECTS</p>
+                    </a>
+
+                    <a href='#skills' className="nav-item"
+                        onMouseEnter={() => setHoverSkills(true)}
+                        onMouseLeave={() => setHoverSkills(false)}>
+                        {hoverSkills ? (
+                            <img className="nav-icon" src={skills1} alt="" />
+                        ) : (
+                            <img className="nav-icon" src={skills} alt="" />
+                        )}
+                        <p>SKILLS</p>
                     </a>
 
                     

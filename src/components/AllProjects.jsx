@@ -11,7 +11,7 @@ export default function AllProjects() {
     return (
         <>
             <div id="projects" className="divider"></div>
-            <h2 id="projects-title">Projects</h2>
+            <h2 id="projects-title">PROJECTS</h2>
             <section className="projects">
 
                 <div className="projects-container">

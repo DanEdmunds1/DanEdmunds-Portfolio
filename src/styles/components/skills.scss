@@ -1,0 +1,25 @@
+.skills-grid {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+    .skills-list {
+        width: 100%;
+        max-width: 600px; // Controls how many per row
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .skill {
+            width: 120px; // Controls size of icon
+            margin: 10px;
+            text-align: center;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
