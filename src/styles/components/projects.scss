@@ -3,7 +3,7 @@
     justify-content: center;
 
     .projects-container {
-        // width: 80%;
+        width: 1000px;
 
         .single-project {
             display: flex;
@@ -14,8 +14,8 @@
 
 
             img {
-                height: 30vh;
-                width: 35vh;
+                height: 35vh;
+                width: 40vh;
                 border-radius: 10px;
             }
 
@@ -23,18 +23,24 @@
                 display: flex;
                 flex-direction: column;
                 margin: 0 20px 0 20px;
-                height: 30vh;
+                height: 35vh;
 
                 // Media query for width based on screen size
 
                 p {
                     margin: 10px 0 10px 0;
-                    font-size: 20px;
-                    overflow-y: auto;
-                    transition: transform .5s;
+                    font-size: 25px;
+                    transition: transform .3s;
+
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 5;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
                     &:hover {
                         cursor: pointer;
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                     }
                 }
 
@@ -131,25 +137,25 @@
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 1146px) {
-    .projects-container {
-        width: 100%;
+// @media only screen and (min-width: 481px) and (max-width: 1146px) {
+//     .projects-container {
+//         width: 100%;
 
-        .single-project {
-            flex-direction: column;
-        }
-    }
-}
+//         .single-project {
+//             flex-direction: column;
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 1147px) {
-    .projects-container {
-        width: 80%;
+// @media only screen and (min-width: 1147px) {
+//     .projects-container {
+//         width: 80%;
 
-        .project-text {
-            width: 30%;
-        }
-    }
-}
+//         .project-text {
+//             width: 30%;
+//         }
+//     }
+// }
 
 // 1341 it starts fukcing up
 // 1447 fukcey also

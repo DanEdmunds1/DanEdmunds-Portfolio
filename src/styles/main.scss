@@ -6,6 +6,8 @@
 @import './components/about.scss';
 @import './components/footer.scss';
 @import './components/skills.scss';
+@import './components/carousel.scss';
+
 
 * {
     font-family: 'Dosis', sans-serif;
@@ -16,9 +18,12 @@
 body {
     margin: 0;
 }
+main {
+    margin: 0;
+}
 
 .divider {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -28,3 +33,4 @@ h2 {
 //    border-bottom: 5px solid black;
 
 }
+

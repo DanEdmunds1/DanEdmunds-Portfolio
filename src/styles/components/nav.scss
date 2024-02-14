@@ -5,6 +5,9 @@
     position: sticky;
     top: 0;
     background-color: transparent;
+    height: 0;
+    z-index: 1000;
+
 
     .nav {
         // border: 1px solid green;

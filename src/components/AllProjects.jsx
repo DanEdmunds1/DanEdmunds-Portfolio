@@ -4,12 +4,27 @@ import project3 from '../assets/project3.jpg'
 import project4 from '../assets/project4.jpg'
 import githubIcon from '../assets/github-icon-port.png'
 import deploy from '../assets/deploy.png'
+// import { useState } from 'react'
+
+// import Description from './Description'
+
+
+
 
 
 export default function AllProjects() {
 
+    // const [show, setShow] = useState(false);
+
+    // const handleClose = () => setShow(false)
+    // const handleShow = () => setShow(true)
+
     return (
         <>
+           
+
+        {/* <Description show={show} handleClose={handleClose}/> */}
+
             <div id="projects" className="divider"></div>
             <h2 id="projects-title">PROJECTS</h2>
             <section className="projects">
@@ -28,8 +43,8 @@ export default function AllProjects() {
                                     <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                     ReadMe</a>
                                 <a href='https://trailstrider1-99ed82a02533.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={deploy} /></div>
-                                Deployment</a>
+                                    <div className="overlay"><img id="button-img" src={deploy} /></div>
+                                    Deployment</a>
                             </div>
                         </div>
                     </article>
@@ -37,18 +52,18 @@ export default function AllProjects() {
 
                     {/* GAME OF THRONES */}
                     <article className="single-project">
-                        <div className="project-text" style={{textAlign: 'right'}}>
+                        <div className="project-text" style={{ textAlign: 'right' }}>
                             <h3>GOT Full Stack</h3>
                             <h4>Group Project - 1 Week</h4>
-                            <p>A CRUD compendium for the Game of Thrones book series / TV show. It has a mongoose back-end serving a MongoDB with a front-end React application. I created the Home and Index pages, the Filters, and various user reactivity.
+                            <p>A CRUD compendium for the Game of Thrones book series / TV show. It has a mongoose back-end serving a MongoDB and a front-end React application. I created the Home and Index pages, the Filters, and various user reactivity.
                             </p>
-                            <div className="project-links" style={{justifyContent: 'flex-end'}}>
+                            <div className="project-links" style={{ justifyContent: 'flex-end' }}>
                                 <a href='https://github.com/DanEdmunds1/GameOfThrones_fullstack' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={githubIcon} /></div>
-                                ReadMe</a>
+                                    <div className="overlay"><img id="button-img" src={githubIcon} /></div>
+                                    ReadMe</a>
                                 <a href='https://gameofthronesfullstack-b965d7354f59.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={deploy} /></div>
-                                Deployment</a>
+                                    <div className="overlay"><img id="button-img" src={deploy} /></div>
+                                    Deployment</a>
                             </div>
                         </div>
                         <img src={project3} alt='project image' />
@@ -65,29 +80,29 @@ export default function AllProjects() {
                             </p>
                             <div className="project-links">
                                 <a href='https://github.com/DanEdmunds1/PokemonAPI' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={githubIcon} /></div>
-                                ReadMe</a>
+                                    <div className="overlay"><img id="button-img" src={githubIcon} /></div>
+                                    ReadMe</a>
                                 <a href='https://pokemonapi-ga.netlify.app/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={deploy} /></div>
-                                Deployment</a>
+                                    <div className="overlay"><img id="button-img" src={deploy} /></div>
+                                    Deployment</a>
                             </div>
                         </div>
                     </article>
 
                     {/* BATTLESHIPS */}
                     <article className="single-project">
-                        <div className="project-text" style={{textAlign: 'right'}}>
+                        <div className="project-text" style={{ textAlign: 'right' }}>
                             <h3>Battleships Game</h3>
                             <h4>Solo Project - 1 Week</h4>
-                            <p>A recreation of the classic BattleShips game in JS. Players can rotate and place their ships, the enemy ships are placed by the computer with working bounds detection. The computer can track where successful hits have been made, and follow a direction until the entire ship is sunk.
+                            <p>A recreation of the classic BattleShips game in JS. Players can rotate and place their ships, enemy ships are placed by the computer with working bounds detection. The computer tracks where successful hits have been made, and follow a direction until the entire ship is sunk.
                             </p>
-                            <div className="project-links" style={{justifyContent: 'flex-end'}}>
+                            <div className="project-links" style={{ justifyContent: 'flex-end' }}>
                                 <a href='https://github.com/DanEdmunds1/Battleships' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={githubIcon} /></div>
-                                ReadMe</a>
+                                    <div className="overlay"><img id="button-img" src={githubIcon} /></div>
+                                    ReadMe</a>
                                 <a href='https://danedmunds1.github.io/Battleships/' target="_blank" rel="noopener noreferrer">
-                                <div className="overlay"><img id="button-img" src={deploy} /></div>
-                                Deployment</a>
+                                    <div className="overlay"><img id="button-img" src={deploy} /></div>
+                                    Deployment</a>
                             </div>
                         </div>
                         <img src={project1} alt='project image' />

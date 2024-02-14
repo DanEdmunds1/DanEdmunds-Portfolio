@@ -46,12 +46,11 @@ export default function Skills() {
 
     return (
         <>
+        <div id="skills" className="divider"></div>
             <h2>SKILLS</h2>
-
             <Container fluid className="skills-grid">
                 <Row className="skills-list">
                     {skills.map((skill, i) => {
-                        console.log(skill)
                         return (
                             <Col className="skill"
                                 key={i}

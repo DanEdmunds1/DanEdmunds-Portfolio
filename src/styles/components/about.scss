@@ -3,6 +3,26 @@
     flex-direction: column;
     align-items: center;
 
+
+        display: flex;
+        justify-content: center;
+        h2 {
+            margin-top: 50px;
+        }
+
+
+ 
+
+    .img-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin-left: 60px;
+        }
+    }
+
     .dan-container {
         border: 2px solid black;
         width: 450px;
@@ -43,11 +63,14 @@
 
     #creatures {
         text-align: center;
+        margin-top: 100px;
+        font-size: 40px;
     }
 
     .dog-section {
         display: flex;
         justify-content: space-around;
+
 
 
         .dog {
@@ -81,10 +104,58 @@
 
     }
 
+    #interests {
+        font-size: 40px;
+    }
+
+    .interests {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .interest-row {
+            width: 100%;
+            max-width: 1200px; // Controls how many per row
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .interest {
+                width: 400px; // Controls size of icon
+                margin: 15px;
+                display: flex;
+                flex-direction: column;
+
+                // align-items: center;
+                h4 {
+                    text-align: center;
+                    font-size: 30px;
+                    margin: 0 0 10px 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 25px;
+                }
+
+                .list {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    p {
+                        margin: 10px 20px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+
     .about-section {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         h3 {
             text-align: center;
             font-size: 40px;
@@ -93,6 +164,7 @@
 
         .school {
             width: 75%;
+
             // WIll need a media query
             h4 {
                 font-size: 30px;

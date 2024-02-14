@@ -1,24 +1,67 @@
-
 .hero {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     // border: 1px solid black;
-    height: 20vh;
-    .name-box {
+    height: 100vh;
+    background: url('../src/assets/port-hero-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .hero-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        h1 {
-            margin: 0;
-            font-size: 70px
-        };
-        h3 {
-            margin: 0;
-            font-size: 25px;
+        background-color: transparent;
+        height: 100vh;
+        .name-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+
+            h1 {
+                margin: 0;
+                font-size: 70px;
+                background-color: transparent;
+                color: #FCF6F5FF
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 25px;
+                background-color: transparent;
+                color: #FCF6F5FF
+            }
+        }
+
+        #noah {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            position: absolute;
+            bottom: 0;
+            align-self: flex-start;
+            background-color: transparent;
+            color: #FCF6F5FF;
+
+            a {
+                text-decoration: none;
+                color: #FCF6F5FF;
+                background-color: transparent;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
-};
+
+
+}
+
 
 
 

@@ -2,28 +2,74 @@ import dan from '../assets/dan.jpg'
 import cooper from '../assets/cooper.jpg'
 import freddie from '../assets/freddie.jpg'
 
+import { Container, Row, Col } from "react-bootstrap"
+
+
+
+
 
 export default function AboutMe() {
 
+    const interests = [
+        { title: 'Nature', text: 'My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, US', img: dan },
+        { title: 'Fitness', text: 'I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find its a great way to strengthen my mind as well as my body', img: cooper },
+        { title: 'Gaming', text: 'Growing up I played mostly single-player RPGs and still tend to lean towards that genre.', img: freddie },
+        { title: 'Music', text: 'I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking', img: dan }
+    ]
 
 
     return (
         <>
-            <div id="about" className="divider"></div>
-            <div className="about">
+            {/* <div id="about" className="divider"></div> */}
+            <div id="about" className="about">
                 <h2>ABOUT ME</h2>
-                <div className="dan-container">
-                    <img id="dan-img" src={dan} alt="image-of-me" />
-                    <div className="dan-titles">
-                        <h5>Junior Developer</h5>
-                        <h4>Dan Edmunds</h4>
+                <div className="img-text">
+                    <div className="dan-container">
+                        <img id="dan-img" src={dan} alt="image-of-me" />
+                        <div className="dan-titles">
+                            <h5>Junior Developer</h5>
+                            <h4>Dan Edmunds</h4>
+                        </div>
                     </div>
+                    <p className="bio">For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
+                        After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
+                    </p>
                 </div>
 
-                <p className="bio">For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
-                    After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
-                </p>
-                <h3 id="creatures">My Creatures</h3>
+                <h3 id="interests">INTERESTS</h3>
+                <Container className='interests'>
+                    <Row className='interest-row'>
+
+
+                        <Col className='interest'>
+                            <h4>Nature</h4>
+                            <p>My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, USA</p>
+                        </Col>
+                        <Col className='interest'>
+                            <h4>Fitness</h4>
+                            <p>I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find it's a great way to strengthen my mind as well as my body</p>
+                        </Col>
+                        <Col className='interest'>
+                            <h4>Gaming</h4>
+                            <p>Growing up I played mostly single-player RPGs and still tend to lean towards that genre.</p>
+                            <p>My favorite games include:</p>
+                            <div className='list'>
+                                <p>Borderlands 2</p>
+                                <p>Red Dead Redemption 2</p>
+                                <p>Baldurs Gate 3</p>
+                                <p>Celeste</p>
+                                <p>Elden Ring</p>
+                            </div>
+
+                        </Col>
+                        <Col className='interest'>
+                            <h4>Music</h4>
+                            <p>I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking</p>
+                        </Col>
+                    </Row>
+                </Container>
+
+                <h3 id="creatures">CREATURES</h3>
                 <div className="dog-section">
                     <div className="dog">
                         <img src={cooper} alt="image-of-dog" />

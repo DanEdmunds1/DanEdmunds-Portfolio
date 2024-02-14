@@ -13,17 +13,23 @@ export default function App() {
     <>
       <Nav />
       <div className="hero">
-        <div className="name-box">
-          <h1>DAN EDMUNDS</h1>
-          <h3>Junior Developer</h3>
+        <div className='hero-text'>
+          <div className="name-box">
+            <h1>DAN EDMUNDS</h1>
+            <h3>Junior Developer</h3>
+
+          </div>
+          <p id="noah">image by <a href="https://www.instagram.com/noahbourns" target="_blank" rel="noopener noreferrer">&#64;noahbourns</a></p>
         </div>
+
       </div>
       {/* <Link to='/colors'><button>Color Schemes</button></Link> */}
 
       <main>
+        <AboutMe />
         <AllProjects />
         <Skills />
-        <AboutMe />
+
         <Contact />
       </main>
       <Footer />
