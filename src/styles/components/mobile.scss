@@ -1,0 +1,64 @@
+@media only screen and (max-width: 750px) {
+    .nav-container{
+        display: none;
+    }
+    .hero {
+        .hero-text {
+            .name-box {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+    .about {
+        .img-text {
+            flex-direction: column;
+            align-items: center;
+            .dan-container {
+                width: 350px;
+            }
+            p {
+                padding-right: 20px;
+            }
+        }
+        .dog-section {
+            flex-direction: column;
+            #cooper {
+                 margin-bottom: 20px;
+            }
+           
+        }
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        .projects-container {
+            width: 400px;
+            .single-project {
+                flex-direction: column;
+                align-items: flex-start;
+                .project-text {
+                    margin: 0;
+                    height: 15vh;
+                    h3 {
+                        margin: 10px 0 10px 0;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+                .project-links {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .contact-container {
+        div {
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+}

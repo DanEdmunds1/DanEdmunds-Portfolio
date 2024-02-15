@@ -3,7 +3,9 @@ import cooper from '../assets/cooper.jpg'
 import freddie from '../assets/freddie.jpg'
 
 import { Container, Row, Col } from "react-bootstrap"
+import AudioPlayer from './AudioPlayer'
 
+import guitar from '../assets/guitar.wav'
 
 
 
@@ -39,17 +41,15 @@ export default function AboutMe() {
                 <h3 id="interests">INTERESTS</h3>
                 <Container className='interests'>
                     <Row className='interest-row'>
-
-
-                        <Col className='interest'>
+                        <Col id="nature" className='interest'>
                             <h4>Nature</h4>
-                            <p>My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, USA</p>
+                            <p>My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, USA, where the image at the top was taken</p>
                         </Col>
-                        <Col className='interest'>
+                        <Col id="fitness" className='interest'>
                             <h4>Fitness</h4>
                             <p>I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find it's a great way to strengthen my mind as well as my body</p>
                         </Col>
-                        <Col className='interest'>
+                        <Col id ="gaming" className='interest'>
                             <h4>Gaming</h4>
                             <p>Growing up I played mostly single-player RPGs and still tend to lean towards that genre.</p>
                             <p>My favorite games include:</p>
@@ -62,16 +62,19 @@ export default function AboutMe() {
                             </div>
 
                         </Col>
-                        <Col className='interest'>
+                        <Col id="music" className='interest'>
                             <h4>Music</h4>
                             <p>I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking</p>
+                            
+                            <AudioPlayer url={guitar}/>
                         </Col>
                     </Row>
                 </Container>
 
+
                 <h3 id="creatures">CREATURES</h3>
                 <div className="dog-section">
-                    <div className="dog">
+                    <div id="cooper" className="dog">
                         <img src={cooper} alt="image-of-dog" />
                         <h4>Cooper</h4>
                         <p>A good boy who enjoys walks and swimming</p>

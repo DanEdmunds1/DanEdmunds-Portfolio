@@ -1,0 +1,41 @@
+.player {
+    height: 30px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    .react-player {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    button {
+        margin-right: 15px;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+        box-shadow: 5px 5px black;
+        transition: transform 0.2s, box-shadow 0.2s;
+
+        &:hover {
+            box-shadow: none;
+            transform: translate(5px, 5px);
+        }
+    }
+
+    progress {
+        margin-top: 10px;
+        animation: progressBarLoad 3s linear forwards
+    }
+}
+
+@keyframes progressBarLoad{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

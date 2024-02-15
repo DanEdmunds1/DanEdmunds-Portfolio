@@ -52,12 +52,13 @@ export default function AllProjects() {
 
                     {/* GAME OF THRONES */}
                     <article className="single-project">
-                        <div className="project-text" style={{ textAlign: 'right' }}>
+                    <img src={project3} alt='project image' />
+                        <div className="project-text alt-project">
                             <h3>GOT Full Stack</h3>
                             <h4>Group Project - 1 Week</h4>
                             <p>A CRUD compendium for the Game of Thrones book series / TV show. It has a mongoose back-end serving a MongoDB and a front-end React application. I created the Home and Index pages, the Filters, and various user reactivity.
                             </p>
-                            <div className="project-links" style={{ justifyContent: 'flex-end' }}>
+                            <div className="project-links alt-links">
                                 <a href='https://github.com/DanEdmunds1/GameOfThrones_fullstack' target="_blank" rel="noopener noreferrer">
                                     <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                     ReadMe</a>
@@ -66,7 +67,7 @@ export default function AllProjects() {
                                     Deployment</a>
                             </div>
                         </div>
-                        <img src={project3} alt='project image' />
+                       
                     </article>
 
                     {/* POKEMON API */}
@@ -91,12 +92,13 @@ export default function AllProjects() {
 
                     {/* BATTLESHIPS */}
                     <article className="single-project">
-                        <div className="project-text" style={{ textAlign: 'right' }}>
+                    <img src={project1} alt='project image' />
+                        <div className="project-text alt-project">
                             <h3>Battleships Game</h3>
                             <h4>Solo Project - 1 Week</h4>
                             <p>A recreation of the classic BattleShips game in JS. Players can rotate and place their ships, enemy ships are placed by the computer with working bounds detection. The computer tracks where successful hits have been made, and follow a direction until the entire ship is sunk.
                             </p>
-                            <div className="project-links" style={{ justifyContent: 'flex-end' }}>
+                            <div className="project-links alt-links">
                                 <a href='https://github.com/DanEdmunds1/Battleships' target="_blank" rel="noopener noreferrer">
                                     <div className="overlay"><img id="button-img" src={githubIcon} /></div>
                                     ReadMe</a>
@@ -105,7 +107,7 @@ export default function AllProjects() {
                                     Deployment</a>
                             </div>
                         </div>
-                        <img src={project1} alt='project image' />
+                        
                     </article>
                 </div>
             </section>

@@ -125,25 +125,36 @@
                 margin: 15px;
                 display: flex;
                 flex-direction: column;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+
+                }
 
                 // align-items: center;
                 h4 {
                     text-align: center;
                     font-size: 30px;
                     margin: 0 0 10px 0;
+                    background-color: transparent;
                 }
 
                 p {
                     margin: 0;
                     font-size: 25px;
+                    background-color: transparent;
                 }
 
                 .list {
                     display: flex;
                     flex-wrap: wrap;
+                    background-color: transparent;
 
                     p {
                         margin: 10px 20px 0 0;
+                        background-color: transparent;
                     }
                 }
             }
@@ -197,3 +208,31 @@
         width: 60%;
     }
 }
+
+@mixin backgroundSettings($url) {
+    background: url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FCF6F5FF;
+}
+
+#nature {
+    &:hover {
+        h4 {
+             @include backgroundSettings($url: '/src/assets/about/nature.jpg');
+             
+        }
+       
+    }
+}
+
+#gaming {
+    &:hover {
+        h4 {
+             @include backgroundSettings($url: '/src/assets/about/gaming.png')
+        }
+       
+    }
+}
+
