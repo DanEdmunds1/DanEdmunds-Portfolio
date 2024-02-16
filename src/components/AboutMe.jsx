@@ -7,18 +7,35 @@ import AudioPlayer from './AudioPlayer'
 
 import guitar from '../assets/guitar.wav'
 
-
-
+import { useState, useEffect, useRef } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 export default function AboutMe() {
 
-    const interests = [
-        { title: 'Nature', text: 'My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, US', img: dan },
-        { title: 'Fitness', text: 'I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find its a great way to strengthen my mind as well as my body', img: cooper },
-        { title: 'Gaming', text: 'Growing up I played mostly single-player RPGs and still tend to lean towards that genre.', img: freddie },
-        { title: 'Music', text: 'I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking', img: dan }
-    ]
+    // const interests = [
+    //     { title: 'Nature', text: 'My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, US', img: dan },
+    //     { title: 'Fitness', text: 'I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find its a great way to strengthen my mind as well as my body', img: cooper },
+    //     { title: 'Gaming', text: 'Growing up I played mostly single-player RPGs and still tend to lean towards that genre.', img: freddie },
+    //     { title: 'Music', text: 'I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking', img: dan }
+    // ]
 
+
+   const [danOnScreen, setDanOnScreen] = useState(false)
+   const { ref: danRef, inView: danInView } = useInView()
+   const [bioOnScreen, setBioOnScreen] = useState(false)
+   const { ref: bioRef, inView: bioInView } = useInView()
+
+   useEffect(() => {
+    if (danInView) {
+        setDanOnScreen(true)
+    }
+   }, [danInView])
+
+   useEffect(() => {
+    if (bioInView) {
+        setBioOnScreen(true)
+    }
+   }, [bioInView])
 
     return (
         <>
@@ -26,14 +43,14 @@ export default function AboutMe() {
             <div id="about" className="about">
                 <h2>ABOUT ME</h2>
                 <div className="img-text">
-                    <div className="dan-container">
+                    <div ref={danRef} className={`dan-container ${danOnScreen ? "loadAboutDan" : "" }`}>
                         <img id="dan-img" src={dan} alt="image-of-me" />
                         <div className="dan-titles">
                             <h5>Junior Developer</h5>
                             <h4>Dan Edmunds</h4>
                         </div>
                     </div>
-                    <p className="bio">For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
+                    <p ref={bioRef} className={`bio ${bioOnScreen ? "loadAboutText" : "" }`}>For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
                         After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
                     </p>
                 </div>
@@ -64,7 +81,7 @@ export default function AboutMe() {
                         </Col>
                         <Col id="music" className='interest'>
                             <h4>Music</h4>
-                            <p>I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking</p>
+                            <p>I started teaching myself guitar in 2016 and have been doing so on and off ever since. I mainly play acoustic as I prefer the sound and play style over electric</p>
                             
                             <AudioPlayer url={guitar}/>
                         </Col>

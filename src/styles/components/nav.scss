@@ -38,8 +38,6 @@
                 text-decoration: none;
 
                 &:hover {
-                    animation-name: color-change;
-                    animation-duration: 0.5s;
                     animation: color-change 0.5s forwards;
 
                     p {
