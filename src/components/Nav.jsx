@@ -38,7 +38,7 @@ export default function Nav() {
                         <p>HOME</p>
                     </a>
 
-                    <a href='#about' className="nav-item"
+                    <a id="nav-about" href='#about' className="nav-item"
                         onMouseEnter={() => setHoverMe(true)}
                         onMouseLeave={() => setHoverMe(false)}>
                         {hoverMe ? (
@@ -49,7 +49,7 @@ export default function Nav() {
                         <p>ABOUT</p>
                     </a>
 
-                    <a href='#projects' className="nav-item"
+                    <a id="nav-projects" href='#projects' className="nav-item"
                         onMouseEnter={() => setHoverProjects(true)}
                         onMouseLeave={() => setHoverProjects(false)}>
                         {hoverProjects ? (
@@ -60,7 +60,7 @@ export default function Nav() {
                         <p>PROJECTS</p>
                     </a>
 
-                    <a href='#skills' className="nav-item"
+                    <a id="nav-skills" href='#skills' className="nav-item"
                         onMouseEnter={() => setHoverSkills(true)}
                         onMouseLeave={() => setHoverSkills(false)}>
                         {hoverSkills ? (

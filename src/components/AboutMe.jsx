@@ -7,7 +7,7 @@ import AudioPlayer from './AudioPlayer'
 
 import guitar from '../assets/guitar.wav'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 export default function AboutMe() {
@@ -24,6 +24,9 @@ export default function AboutMe() {
    const { ref: danRef, inView: danInView } = useInView()
    const [bioOnScreen, setBioOnScreen] = useState(false)
    const { ref: bioRef, inView: bioInView } = useInView()
+   const [dogOnScreen, setDogOnScreen] = useState(false)
+   const { ref: dogRef, inView: dogInView } = useInView()
+
 
    useEffect(() => {
     if (danInView) {
@@ -36,6 +39,12 @@ export default function AboutMe() {
         setBioOnScreen(true)
     }
    }, [bioInView])
+
+   useEffect(() => {
+    if (dogInView) {
+        setDogOnScreen(true)
+    }
+   }, [dogInView])
 
     return (
         <>
@@ -91,12 +100,12 @@ export default function AboutMe() {
 
                 <h3 id="creatures">CREATURES</h3>
                 <div className="dog-section">
-                    <div id="cooper" className="dog">
+                    <div ref={dogRef} className={`dog ${dogOnScreen ? "cooper" : ""}`}>
                         <img src={cooper} alt="image-of-dog" />
                         <h4>Cooper</h4>
                         <p>A good boy who enjoys walks and swimming</p>
                     </div>
-                    <div className="dog">
+                    <div ref={dogRef} className={`dog ${dogOnScreen ? "freddie" : ""}`}>
                         <img src={freddie} alt="image-of-dog" />
                         <h4>Freddie</h4>
                         <p>Falls asleep at the desk instead of coding</p>

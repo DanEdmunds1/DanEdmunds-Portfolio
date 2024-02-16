@@ -90,6 +90,7 @@
             border: 2px solid black;
             margin: 0 20px 0 20px;
             font-size: 20px;
+ 
 
             img {
                 height: 300px;
@@ -248,15 +249,12 @@
     from {
         transform: translateY(100px);
         opacity: 0;
-        // background: linear-gradient(#FCF6F5FF, #FCF6F5FF) padding-box,
-        // linear-gradient(to right, goldenrod, goldenrod) border-box;
     }
 
     to {
         transform: translateY(0);
         opacity: 1;
-        // background: linear-gradient(#FCF6F5FF, #FCF6F5FF) padding-box,
-        // linear-gradient(to right, #2C5F2D, #97BC62FF) border-box;
+    
     }
 }
 
@@ -270,6 +268,35 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@keyframes loadCooper {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loadFreddie {
+    from {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cooper {
+    animation: loadCooper 1.5s forwards;
+}
+.freddie {
+    animation: loadFreddie 1.5s forwards;
 }
 
 .loadAboutDan {
