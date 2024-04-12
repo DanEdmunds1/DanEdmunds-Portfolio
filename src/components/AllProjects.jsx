@@ -39,7 +39,7 @@ export default function AllProjects() {
         {
             img: project2,
             title: 'Pokemon API',
-            timeframe: 'Paried Project - 2 Days',
+            timeframe: 'Paired Project - 2 Days',
             text: 'A React application that consumes a third-party Pokemon API, displaying a home, index, and single view page. It also includes a functional searchbar and dropdown for filtering Pokemon by their type(s).',
             readmeLink: 'https://github.com/DanEdmunds1/PokemonAPI',
             deployLink: 'https://pokemonapi-ga.netlify.app/'
