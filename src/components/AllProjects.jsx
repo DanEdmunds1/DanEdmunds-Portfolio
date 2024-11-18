@@ -46,7 +46,7 @@ export default function AllProjects() {
         },
         {
             img: project1,
-            title: 'TrailStrider',
+            title: 'Battleships',
             timeframe: 'Solo Project - 7 Days',
             text: 'A recreation of the classic BattleShips game in JS. Players can rotate and place their ships, enemy ships are placed by the computer with working bounds detection. The computer tracks where successful hits have been made, and follow a direction until the entire ship is sunk.',
             readmeLink: 'https://github.com/DanEdmunds1/Battleships',
