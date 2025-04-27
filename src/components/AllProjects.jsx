@@ -25,7 +25,7 @@ export default function AllProjects() {
             img: project5,
             title: 'Campaign Conductor',
             timeframe: 'Solo Project - 15 Days',
-            text: 'A Dungeons and Dragons companion application with full CRUD capabilities, allowing characters and Dungeon Masters to track data and make attacks. This project consists of a Sanity Headless CMS, and a front-end Agnular application.',
+            text: 'A Dungeons and Dragons companion application with full CRUD capabilities, allowing characters and Dungeon Masters to track data and make attacks. This project consists of a Sanity Headless CMS, and a front-end Angular application.',
             readmeLink: 'https://github.com/DanEdmunds1/CampaignConductor',
             deployLink: 'https://danedmunds1.github.io/CampaignConductor/'
         },
