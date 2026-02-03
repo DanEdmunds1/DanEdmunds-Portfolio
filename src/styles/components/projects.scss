@@ -38,10 +38,10 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
 
-                    &:hover {
-                        cursor: pointer;
-                        transform: scale(1.05);
-                    }
+                    // &:hover {
+                    //     cursor: pointer;
+                    //     transform: scale(1.05);
+                    // }
                 }
 
                 h3 {
@@ -98,7 +98,7 @@
                         &:hover {
                             color: #FCF6F5FF;
                             background-color: black;
-                            transform: scale(1.2);
+                            transform: scale(1);
 
                             .overlay {
                                 height: 100%;

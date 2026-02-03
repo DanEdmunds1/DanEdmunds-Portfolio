@@ -1,4 +1,4 @@
-import dan from '../assets/dan.jpg'
+import dan from '../assets/dan1.jpg'
 import cooper from '../assets/cooper.jpg'
 import freddie from '../assets/freddie.jpg'
 
@@ -20,31 +20,31 @@ export default function AboutMe() {
     // ]
 
 
-   const [danOnScreen, setDanOnScreen] = useState(false)
-   const { ref: danRef, inView: danInView } = useInView()
-   const [bioOnScreen, setBioOnScreen] = useState(false)
-   const { ref: bioRef, inView: bioInView } = useInView()
-   const [dogOnScreen, setDogOnScreen] = useState(false)
-   const { ref: dogRef, inView: dogInView } = useInView()
+    const [danOnScreen, setDanOnScreen] = useState(false)
+    const { ref: danRef, inView: danInView } = useInView()
+    const [bioOnScreen, setBioOnScreen] = useState(false)
+    const { ref: bioRef, inView: bioInView } = useInView()
+    const [dogOnScreen, setDogOnScreen] = useState(false)
+    const { ref: dogRef, inView: dogInView } = useInView()
 
 
-   useEffect(() => {
-    if (danInView) {
-        setDanOnScreen(true)
-    }
-   }, [danInView])
+    useEffect(() => {
+        if (danInView) {
+            setDanOnScreen(true)
+        }
+    }, [danInView])
 
-   useEffect(() => {
-    if (bioInView) {
-        setBioOnScreen(true)
-    }
-   }, [bioInView])
+    useEffect(() => {
+        if (bioInView) {
+            setBioOnScreen(true)
+        }
+    }, [bioInView])
 
-   useEffect(() => {
-    if (dogInView) {
-        setDogOnScreen(true)
-    }
-   }, [dogInView])
+    useEffect(() => {
+        if (dogInView) {
+            setDogOnScreen(true)
+        }
+    }, [dogInView])
 
     return (
         <>
@@ -52,15 +52,20 @@ export default function AboutMe() {
             <div id="about" className="about">
                 <h2>ABOUT ME</h2>
                 <div className="img-text">
-                    <div ref={danRef} className={`dan-container ${danOnScreen ? "loadAboutDan" : "" }`}>
+                    <div ref={danRef} className={`dan-container ${danOnScreen ? "loadAboutDan" : ""}`}>
                         <img id="dan-img" src={dan} alt="image-of-me" />
                         <div className="dan-titles">
                             <h5>Junior Developer</h5>
                             <h4>Dan Edmunds</h4>
                         </div>
                     </div>
-                    <p ref={bioRef} className={`bio ${bioOnScreen ? "loadAboutText" : "" }`}>For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
+                    <p ref={bioRef} className={`bio ${bioOnScreen ? "loadAboutText" : ""}`}>For a long time I was drawn to Software Development by its demand for problem solving and critical thinking, but I did not pursue a career in software until a good friend / former colleague pushed me to learn the skills required.
                         After completing the pre-work for the General Assembly bootcamp I was hooked on Web Development, and graduating from the course solidified my passion for coding.
+
+                        <br></br>
+                        <br></br>
+
+                        Now I create software solutions for a variety of departments across McLaren Racing as part of their Digital Transformation team. My favourite part of my role there is finding creative solutions to challenges faced by a racing team performing at the highest level.
                     </p>
                 </div>
 
@@ -75,7 +80,7 @@ export default function AboutMe() {
                             <h4>Fitness</h4>
                             <p>I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find it's a great way to strengthen my mind as well as my body</p>
                         </Col>
-                        <Col id ="gaming" className='interest'>
+                        <Col id="gaming" className='interest'>
                             <h4>Gaming</h4>
                             <p>Growing up I played mostly single-player RPGs and still tend to lean towards that genre.</p>
                             <p>My favorite games include:</p>
@@ -91,14 +96,14 @@ export default function AboutMe() {
                         <Col id="music" className='interest'>
                             <h4>Music</h4>
                             <p>I started teaching myself guitar in 2016 and have been doing so on and off ever since. I mainly play acoustic as I prefer the sound and play style over electric</p>
-                            
-                            <AudioPlayer url={guitar}/>
+
+                            <AudioPlayer url={guitar} />
                         </Col>
                     </Row>
                 </Container>
 
 
-                <h3 id="creatures">CREATURES</h3>
+                <h3 id="creatures">PETS</h3>
                 <div className="dog-section">
                     <div ref={dogRef} className={`dog ${dogOnScreen ? "cooper" : ""}`}>
                         <img src={cooper} alt="image-of-dog" />

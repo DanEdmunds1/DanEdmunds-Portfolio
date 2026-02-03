@@ -2,7 +2,7 @@ import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.jpg'
 import project3 from '../assets/project3.jpg'
 import project4 from '../assets/project4.jpg'
-import project5 from '../assets/project5.jpg'
+// import project5 from '../assets/project5.jpg'
 import githubIcon from '../assets/github-icon-port.png'
 import deploy from '../assets/deploy.png'
 // import { useState } from 'react'
@@ -21,14 +21,14 @@ export default function AllProjects() {
     // const handleShow = () => setShow(true)
 
     const projects = [
-        {
-            img: project5,
-            title: 'Campaign Conductor',
-            timeframe: 'Solo Project - 15 Days',
-            text: 'A Dungeons and Dragons companion application with full CRUD capabilities, allowing characters and Dungeon Masters to track data and make attacks. This project consists of a Sanity Headless CMS, and a front-end Angular application.',
-            readmeLink: 'https://github.com/DanEdmunds1/CampaignConductor',
-            deployLink: 'https://danedmunds1.github.io/CampaignConductor/'
-        },
+        // {
+        //     img: project5,
+        //     title: 'Campaign Conductor',
+        //     timeframe: 'Solo Project - 15 Days',
+        //     text: 'A Dungeons and Dragons companion application with full CRUD capabilities, allowing characters and Dungeon Masters to track data and make attacks. This project consists of a Sanity Headless CMS, and a front-end Angular application.',
+        //     readmeLink: 'https://github.com/DanEdmunds1/CampaignConductor',
+        //     deployLink: 'https://danedmunds1.github.io/CampaignConductor/'
+        // },
         {
             img: project4,
             title: 'TrailStrider',
