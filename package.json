@@ -4,18 +4,20 @@
   "version": "0.0.0",
   "homepage": "https://danedmunds1.github.io/DanEdmunds-Portfolio/",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "start": "react-script start",
+    "start": "react-scripts start",
     "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "node": "^25.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
