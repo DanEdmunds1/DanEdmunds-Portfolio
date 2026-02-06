@@ -12,14 +12,6 @@ import { useInView } from 'react-intersection-observer'
 
 export default function AboutMe() {
 
-    // const interests = [
-    //     { title: 'Nature', text: 'My ideal environment is one with lots of greenery and plenty of sunlight. I spent 5 Summers working as a Camp Counsellor in NH, US', img: dan },
-    //     { title: 'Fitness', text: 'I used to rock climb and play badminton but now I mostly just go to the gym to lift weights. I find its a great way to strengthen my mind as well as my body', img: cooper },
-    //     { title: 'Gaming', text: 'Growing up I played mostly single-player RPGs and still tend to lean towards that genre.', img: freddie },
-    //     { title: 'Music', text: 'I started teaching myself guitar when I was 16 and have been doing so on and off ever since. I mainly play acoustic as I primarily enjoy finger picking', img: dan }
-    // ]
-
-
     const [danOnScreen, setDanOnScreen] = useState(false)
     const { ref: danRef, inView: danInView } = useInView()
     const [bioOnScreen, setBioOnScreen] = useState(false)
