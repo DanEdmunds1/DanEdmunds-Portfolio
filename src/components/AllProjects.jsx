@@ -41,9 +41,9 @@ export default function AllProjects() {
             img: project3,
             title: 'GOT Full Stack',
             timeframe: 'Group Project - 7 Days',
-            text: 'A CRUD compendium for the Game of Thrones book series / TV show. It has a mongoose back-end serving a MongoDB and a front-end React application. I created the Home and Index pages, the Filters, and various user reactivity.',
-            readmeLink: 'https://github.com/DanEdmunds1/GameOfThrones_fullstack',
-            deployLink: 'https://gameofthronesfullstack-b965d7354f59.herokuapp.com/'
+            text: 'A CRUD compendium for the Game of Thrones book series / TV show. It has a mongoose back-end serving a MongoDB and a front-end React application. I created the Home and Index pages, the Filters, and various user reactivity. Note: Data lost so does not work properly',
+            readmeLink: 'https://github.com/DanEdmunds1/GameOfThrones_fullstack'
+            // deployLink: 'https://gameofthronesfullstack-b965d7354f59.herokuapp.com/'
         },
         {
             img: project2,
