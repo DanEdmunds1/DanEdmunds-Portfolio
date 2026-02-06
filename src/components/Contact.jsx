@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="contact-container">
         <div><img src={email} alt="email-icon"/><span>:</span><a href="mailto:dan.edmunds7@gmail.com">dan.edmunds7@gmail.com</a></div>
 
-        <div><img src={linkedin} alt="linkedin-icon"/><span>:</span><a href="https://www.linkedin.com/in/daniel-edmunds7/">LinkedIn</a></div>
+        <div><img src={linkedin} alt="linkedin-icon"/><span>:</span><a href="https://www.linkedin.com/in/dan-edmunds/">LinkedIn</a></div>
 
         <div><img src={github} alt="github-icon"/><span>:</span><a href="https://github.com/DanEdmunds1">GitHub</a></div>
         </div>
